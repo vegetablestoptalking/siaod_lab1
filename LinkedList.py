@@ -55,8 +55,7 @@ class List:
         l += "]"
         return l
 
-    def __len__(
-            self):  # for item in sequence does not work without this func :(. updЖ does not work with this thing too
+    def __len__(self):  # for item in sequence does not work without this func:(. updЖ does not work with this thing too
         return List.length
 
     def __getitem__(self, key):  # system class for accessing to item. for ex. "a[1]"
