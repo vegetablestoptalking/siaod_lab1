@@ -32,7 +32,7 @@ class List:
 
     def pop(self):  # deleting. for future in lab
         cur = self.head
-        if List.length == 1:
+        if List.length(self) == 1:
             cur = None
             return
         while cur.next.next is not None:
@@ -56,7 +56,7 @@ class List:
         return l
 
     def __len__(self):  # for item in sequence does not work without this func:(. updЖ does not work with this thing too
-        return List.length
+        return List.length(self)
 
     def __getitem__(self, key):  # system class for accessing to item. for ex. "a[1]"
         length = 0
